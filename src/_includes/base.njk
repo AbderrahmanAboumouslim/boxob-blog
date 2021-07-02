@@ -15,5 +15,22 @@
         </main>
 
         {% include 'footer.njk' %}
+        <!--My little javascript for btn menu/exit-->
+        <script>
+            const mobileBtnMenu = document.getElementById("menu-btn-js")
+            mobileBtnExit = document.getElementById("exit-btn-js")
+            nav = document.querySelector("nav")
+
+            mobileBtnMenu.addEventListener("click", () => {
+                nav
+                    .classList
+                    .add("btn-btn");
+            })
+            mobileBtnExit.addEventListener("click", () => {
+                nav
+                    .classList
+                    .remove("btn-btn");
+            })
+        </script>
     </body>
 </html>

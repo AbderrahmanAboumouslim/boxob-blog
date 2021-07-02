@@ -1,0 +1,14 @@
+---
+layout: 'base.njk'
+---
+<section class="single-article box">
+    <div class="container">
+
+        <h1 class="title">{{ title }}</h1>
+        <p class="author-date">by {{ author }} on {{ date }}</p>
+        <img class="article-img" src="{{ image }}" alt="">
+        <div class="content">
+            {{content | safe}}
+        </div>
+    </div>
+</section>

@@ -171,7 +171,7 @@ nav.btn-btn {
 .left-col {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
-  padding: 0 1rem;
+  padding: clamp(1rem, 5vw, 3rem);
   flex-direction: column;
 }
 
@@ -186,14 +186,17 @@ nav.btn-btn {
 .right-col {
   flex-direction: column;
 }
+
 /*section-b*/
 
 .section-b {
   grid-template-columns: 1fr 0.4fr;
+  background-color: var(--secondaryColor);
+  border-radius: 1rem;
 }
 
 .featured-banner {
-  background-color: var(--secondaryColor);
+  background-color: rgba(0, 0, 0, 0.33);
   border-radius: 0 1rem 0 1rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -212,7 +215,6 @@ nav.btn-btn {
 
 .left-content {
   grid-template-columns: 1fr 0.7fr;
-  flex-direction: row;
 }
 
 /*right-col*/
@@ -229,7 +231,7 @@ nav.btn-btn {
 
 .my-footer {
   margin-top: 1rem;
-  background-color: var(--secondaryColor);
+  background-color: rgb(2, 65, 107);
   height: auto;
   padding: 1rem 2rem;
   display: grid;
@@ -358,8 +360,204 @@ nav.btn-btn {
 
 .btn {
   margin-top: 1rem;
-  padding: 0.7rem;
+  padding: clamp(0.4rem, 5vw, 1rem);
   border-radius: 1rem;
-  background-color: var(--secondaryColor);
+  background-color: green;
   color: white;
+  font-size: 1.4rem;
+}
+
+/****** Article.njk**************/
+
+.single-article {
+  background-color: white;
+  line-height: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 3rem 0;
+  border-radius: 1rem;
+}
+
+.container {
+  width: 1100px;
+  max-width: 100%;
+  text-align: center;
+  padding: clamp(1rem, 5vw, 3rem);
+  margin: auto;
+}
+
+.title {
+  font-size: clamp(1.2rem, 4vw, 4rem);
+  margin: 1rem;
+}
+
+.author-date {
+  color: gray;
+}
+
+.content {
+  font-family: monospace;
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
+}
+
+.article-img {
+  width: auto;
+  height: 400px;
+}
+
+/* CONTACT */
+
+.screen {
+  width: 700px;
+  max-width: 100%;
+  margin: 7rem auto;
+  padding: 2rem 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  background: rgb(0, 110, 255);
+
+  border-radius: 4rem;
+}
+
+.container1 {
+  text-align: center;
+}
+.container1 h1 {
+  font-size: 3rem;
+}
+.container1 p {
+  color: rgb(34, 32, 32);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+label,
+.form-p {
+  font-size: 1.4rem;
+  letter-spacing: 0.04rem;
+}
+input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.4rem;
+}
+
+.myselectors {
+  color: gray;
+  padding: 1rem;
+  margin: 0.9rem 0;
+  font-size: 1.2rem;
+}
+select option {
+  color: rgb(82, 81, 81);
+}
+.gray {
+  color: gray;
+}
+/*---------------------*/
+textarea {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.from-btn {
+  font-size: 2rem;
+  padding: 0.4rem 1rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4rem;
+  width: 100%;
+  transition: all 0.35s ease-in-out;
+}
+.form-btn:hover {
+  background-color: rgb(190, 188, 155);
+  color: #0f0c29;
+  font-weight: bold;
+}
+
+h1,
+label,
+.com-p {
+  text-shadow: 0 0 3px black;
+}
+
+.form-p {
+  text-shadow: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* About (((((((((((((((((((((((*/
+
+.about {
+  width: 90vw;
+  height: auto;
+  padding: clamp(0.3rem, 3vw, 4rem);
+  margin: auto;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+}
+
+.person {
+  border-radius: 50%;
+  box-shadow: 0 0 20px black;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.about-info {
+  box-shadow: 0 0 20px black;
+  background-color: white;
+  padding: clamp(0.4rem, 3vw, 2rem);
+  border-radius: 3rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.about-title {
+  font-size: clamp(1.7rem, 5vw, 3rem);
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 728px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/******************************/
+/* Home media Query*/
+
+@media screen and (max-width: 728px) {
+  .section-b,
+  .left-content,
+  .section-a {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .right-content {
+    display: none;
+  }
 }

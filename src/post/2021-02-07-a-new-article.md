@@ -2,7 +2,8 @@
 title: a new article
 author: Rokinos
 date: 2021-02-07
-image: /assests/post/Amazon.png
+tags: ["post", "featured"]
+image: /assets/post/Amazom.png
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tenetur nihil quia, eius saepe dicta, consequuntur a nam veniam doloremque illo, cum odit voluptatum! Odit placeat veritatis sint voluptatum adipisicing elit. Nisi tenetur nihil
 ---
 
