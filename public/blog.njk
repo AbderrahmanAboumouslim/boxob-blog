@@ -1,24 +1,33 @@
 ---
 layout: 'base.njk'
 ---
-<main class="mymain">
+<section class="section-b grid">
+
     <div class="featured">
         <div class="featured-banner">
-            <h1>This is our Featured Blogs</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias itaque mollitia asperiores? Asperiores a ut voluptatibus cupiditate?</p>
+            <h1>This is our Recent Blogs</h1>
+            <p>Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, numquam consequatur eius laboriosam ipsam libero quia repellendus quam quis eum. Quod eligendi aspernatur debitis error architecto corrupti harum, exercitationem corporis deleniti vitae modi libero?
+            dolor sit amet, consectetur adipisicing elit. Molestias itaque mollitia asperiores? Asperiores a ut voluptatibus cupiditate?</p>
         </div>
         <article>
-            <div class="left-content box grid flex">
-                <div>
-                    <h1>Post 1 Title</h1>
-                    <div class="author-date">by Rokinos on 7/1/2021</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem corporis voluptate sed eligendi assumenda, blanditiis voluptatum minus aliquid pariatur, quas eius unde ut? Tempore provident perspiciatis fugiat. Numquam laboriosam, eligendi nam laborum modi aut!</p>
-                    <a href="#" class="btn">Continue reading</a>
+
+            {%- for post in collections.post | reverse -%}
+                <div class="left-content box grid flex">
+                    <div>
+                        <h1>
+                            <a href="post.url">{{post.data.title}}</a>
+                        </h1>
+                        <div class="author-date">by {{post.data.author}} on{{post.date}}</div>
+                        <p>{{post.data.description}}</p>
+                        <a href="{{post.url}}" class="btn">Continue reading</a>
+                    </div>
+                    <div>
+                        <img src="{{post.data.image}}" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img src="/assets/Amazom.png" alt="">
-                </div>
-            </div>
+            {%- endfor -%}
+
         </article>
     </div>
-</main>
+    {% include "right.njk" %}
+</section>

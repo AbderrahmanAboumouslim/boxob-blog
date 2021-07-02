@@ -1,7 +1,8 @@
 ---
-title: Myfirst Blog
+title: a new article
 author: Rokinos
-image: /src/assests/post/Amazon.png
+date: 2021-02-07
+image: /assests/post/Amazon.png
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tenetur nihil quia, eius saepe dicta, consequuntur a nam veniam doloremque illo, cum odit voluptatum! Odit placeat veritatis sint voluptatum adipisicing elit. Nisi tenetur nihil
 ---
 

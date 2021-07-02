@@ -2,64 +2,47 @@
 layout: 'base.njk'
 ---
 
-<main class="mymain">
-    <!--Hero-- SECTION-A -->
-    <section class="section-a box grid">
-        <div class="left-col  flex">
-            <h1>left-col Title</h1>
-            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eos neque suscipit ipsam molestiae.</p>
-            <div class="two-buttons">
-                <a href="#" class="featured btn">Feautred</a>
-                <a href="#" class="recent-blogs btn">Recent Blogs</a>
-            </div>
+<!--Hero-- SECTION-A -->
+<section class="section-a box grid">
+    <div class="left-col  flex">
+        <h1>left-col Title</h1>
+        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eos neque suscipit ipsam molestiae.</p>
+        <div class="two-buttons">
+            <a href="#" class="featured btn">Feautred</a>
+            <a href="#" class="recent-blogs btn">Recent Blogs</a>
         </div>
-        <img src="assets/Amazom.png" alt="">
-    </section>
+    </div>
+    <img src="assets/Amazom.png" alt="">
+</section>
 
-    <!--SECTION-B-->
+<!--SECTION-B-->
 
-    <section class="section-b grid">
-        <!--left-content-->
-        <div class="featured">
-            <div class="featured-banner">
-                <h1>This is our Featured Blogs</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias itaque mollitia asperiores? Asperiores a ut voluptatibus cupiditate?</p>
-            </div>
-            <article>
-                <div class="left-content box grid flex">
-                    <div>
-                        <h1>Post 1 Title</h1>
-                        <div class="author-date">by Rokinos on 7/1/2021</div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem corporis voluptate sed eligendi assumenda, blanditiis voluptatum minus aliquid pariatur, quas eius unde ut? Tempore provident perspiciatis fugiat. Numquam laboriosam, eligendi nam laborum modi aut!</p>
-                        <a href="#" class="btn">Continue reading</a>
-                    </div>
-                    <div>
-                        <img src="assets/Amazom.png" alt="">
-                    </div>
+<section class="section-b grid">
+    <!--left-content-->
+    <div class="featured">
+        <div class="featured-banner">
+            <h1>This is our Featured Blogs</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias itaque mollitia asperiores? Asperiores a ut voluptatibus cupiditate?</p>
+        </div>
+        <article>
+            <div class="left-content box grid flex">
+                <div>
+                    <h1>Post 1 Title</h1>
+                    <div class="author-date">by Rokinos on 7/1/2021</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem corporis voluptate sed eligendi assumenda, blanditiis voluptatum minus aliquid pariatur, quas eius unde ut? Tempore provident perspiciatis fugiat. Numquam laboriosam, eligendi nam laborum modi aut!</p>
+                    <a href="#" class="btn">Continue reading</a>
                 </div>
-            </article>
-        </div>
-
-        <!--right-content-->
-        <div class="right-content">
-            <div class="boxes box flex">
-                <img src="/assets/Amazom.png" alt="">
-                <h2>Brief About Me</h2>
-                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi? amet consectetur,
-                    adipisicing elit. Velit error laborum esse provident eveniet.</p>
-            </div>
-            <div class="boxes box flex">
-                <h1>FOLLOW ME</h1>
-                <div class="socials">
-                    <i class="fab fa-facebook "></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
+                <div>
+                    <img src="assets/Amazom.png" alt="">
                 </div>
             </div>
-        </div>
+        </article>
+    </div>
 
-    </section>
-</main>
+    {% include 'right.njk'%}
+
+</section>
+
 <!--Footer-->
 
 <!--My little javascript for btn menu/exit-->
