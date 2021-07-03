@@ -11,7 +11,7 @@ author: Rokinos
 date: 2021-07-03T17:45:46.006Z
 tags:
   - post
-image: /assets/post/untitled-design-4-.png
+image: /assets/post/untitled-design-5-.png
 ---
 Chapter One
 
