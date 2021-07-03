@@ -76,7 +76,7 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--secondaryColor);
+  background-color: var(--colorTwo);
   width: 66vw;
   height: 100vh;
   text-align: center;
