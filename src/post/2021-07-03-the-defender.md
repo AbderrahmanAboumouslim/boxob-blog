@@ -8,10 +8,10 @@ description: I’m lying down on my front, my brow is stuck to the cold surface 
   draw my head up between my shoulders, and cautiously creep towards the cellar
   steps.
 author: Rokinos
-date: 2021-07-03T16:51:50.351Z
+date: 2021-07-03T17:45:46.006Z
 tags:
   - post
-image: /assets/post/defender.png
+image: /assets/post/untitled-design-3-.png
 ---
 Chapter One
 
