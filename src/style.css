@@ -10,11 +10,17 @@
   --thirdColor: rgb(34, 34, 34);
   --fourthColor: gray;
   --premiumBtn: rgb(32, 166, 255);
+  --logoColor: #b3995d;
+  --colorOne: #f4f1de;
+  --colorTwo: #e07a5f;
+  --colorThree: #3d405b;
+  --colorFour: #81b29a;
+  --colorFive: #f2cc8f;
 }
 
 body {
   font-family: monospace;
-  background-color: rgba(255, 166, 0, 0.686);
+  background-color: var(--colorFive);
 }
 
 ul {
@@ -41,7 +47,7 @@ img {
 }
 
 .logo {
-  color: var(--secondaryColor);
+  color: var(--logoColor);
   font-size: 3rem;
 }
 
@@ -53,7 +59,7 @@ img {
 
 .navbar-container {
   padding: 0.4rem 1rem;
-  background-color: white;
+  background-color: var(--colorOne);
 }
 
 .mobile-nav {
@@ -135,6 +141,10 @@ nav.btn-btn {
     border-bottom: 3px solid var(--fourthColor);
   }
 
+  nav ul li > .premium-btn:hover {
+    border-bottom: 3px solid var(--colorThree);
+  }
+
   .navbar-container {
     display: grid;
     grid-template-columns: 120px auto;
@@ -147,15 +157,17 @@ nav.btn-btn {
   }
 
   .premium-btn {
-    margin: -0.3rem;
-    border: 0.3rem solid var(--premiumBtn);
-    color: var(--premiumBtn);
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: -0.3rem;
+    border: 0.3rem solid var(--colorThree);
+    color: var(--colorTwo);
     border-radius: 2rem;
   }
 
   .premium-btn:hover {
     color: white;
-    background-color: var(--premiumBtn);
+    background-color: var(--colorThree);
   }
 }
 /* content ----------------------------------------------------------------*/
@@ -169,7 +181,8 @@ nav.btn-btn {
 }
 
 .left-col {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--colorOne);
+  color: var(--colorTwo);
   border-radius: 1rem;
   padding: clamp(1rem, 5vw, 3rem);
   flex-direction: column;
@@ -191,13 +204,12 @@ nav.btn-btn {
 
 .section-b {
   grid-template-columns: 1fr 0.4fr;
-  background-color: var(--secondaryColor);
+  background-color: var(--colorFive);
   border-radius: 1rem;
 }
 
 .featured-banner {
-  background-color: rgba(0, 0, 0, 0.33);
-  border-radius: 0 1rem 0 1rem;
+  background-color: var(--colorThree);
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
@@ -217,6 +229,14 @@ nav.btn-btn {
   grid-template-columns: 1fr 0.7fr;
 }
 
+.left-content h1 {
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+}
+
+.author-date {
+  margin-bottom: 0.8rem;
+}
+
 /*right-col*/
 .boxes {
   margin-bottom: 1rem;
@@ -227,11 +247,15 @@ nav.btn-btn {
   margin-top: 1rem;
 }
 
+.boxes .socials {
+  color: var(--colorTwo);
+}
+
 /*Foooooooter**********************************/
 
 .my-footer {
   margin-top: 1rem;
-  background-color: rgb(2, 65, 107);
+  background-color: var(--colorThree);
   height: auto;
   padding: 1rem 2rem;
   display: grid;
@@ -244,14 +268,15 @@ nav.btn-btn {
 }
 
 .my-footer h2 {
-  color: white;
+  color: var(--colorTwo);
   text-shadow: 0 0 2px var(--thirdColor);
   margin-bottom: 1rem;
 }
 
 .my-footer ul li > a,
 .my-footer p {
-  color: var(--thirdColor);
+  color: var(--colorOne);
+  font-size: 1.1rem;
 }
 
 .my-footer ul li > a:hover {
@@ -261,7 +286,7 @@ nav.btn-btn {
 
 .socials {
   font-size: 2rem;
-  color: var(--thirdColor);
+  color: var(--colorOne);
   margin-top: 1rem;
   cursor: pointer;
 }
@@ -280,7 +305,7 @@ nav.btn-btn {
   margin-top: 0.5rem;
   width: 100%;
   height: 2.7rem;
-  background-color: rgb(98, 181, 206);
+  background-color: var(--colorOne);
   border-radius: 0.7rem;
   position: relative;
 }
@@ -302,7 +327,7 @@ nav.btn-btn {
   height: 2.7rem;
   top: 0;
   right: 0;
-  background-color: black;
+  background-color: var(--colorTwo);
   color: white;
   border-radius: 0 0.7rem 0.7rem 0;
   cursor: pointer;
@@ -362,9 +387,14 @@ nav.btn-btn {
   margin-top: 1rem;
   padding: clamp(0.4rem, 5vw, 1rem);
   border-radius: 1rem;
-  background-color: green;
+  background-color: var(--colorThree);
   color: white;
   font-size: 1.4rem;
+}
+
+.btn:hover {
+  background-color: rgb(255, 102, 0);
+  color: black;
 }
 
 /****** Article.njk**************/
@@ -415,7 +445,7 @@ nav.btn-btn {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
-  background: rgb(0, 110, 255);
+  background: var(--colorThree);
 
   border-radius: 4rem;
 }
@@ -473,7 +503,7 @@ textarea {
 .from-btn {
   font-size: 2rem;
   padding: 0.4rem 1rem;
-  background-color: #000000;
+  background-color: var(--fourthColor);
   color: white;
   border: none;
   cursor: pointer;
@@ -484,7 +514,6 @@ textarea {
 .form-btn:hover {
   background-color: rgb(190, 188, 155);
   color: #0f0c29;
-  font-weight: bold;
 }
 
 .contact-title,
