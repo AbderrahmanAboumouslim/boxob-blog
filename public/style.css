@@ -399,12 +399,18 @@ nav.btn-btn {
 
 /****** Article.njk**************/
 
+.container img {
+  width: 100%;
+  height: auto;
+}
+
 .single-article {
+  width: 90vw;
   background-color: white;
   line-height: 2rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 3rem 0;
+  margin: 3rem auto;
   border-radius: 1rem;
 }
 
