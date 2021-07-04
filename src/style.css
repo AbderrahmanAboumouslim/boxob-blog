@@ -244,6 +244,17 @@ nav.btn-btn {
   margin-bottom: 0.8rem;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .left-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*right-col*/
 .boxes {
   margin-bottom: 1rem;
@@ -596,7 +607,6 @@ label,
   .left-content,
   .section-a {
     grid-template-columns: 1fr;
-    flex-direction: column;
   }
 
   .right-content {
