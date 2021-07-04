@@ -6,7 +6,14 @@ description: I’m lying down on my front, my brow is stuck to the cold surface 
   of crushed glass are scattered all over the shop. My intuitive says, Get up
   and run! However, I don’t tune in to it. Instep, I accumulate all my mettle,
   draw my head up between my shoulders, and cautiously creep towards the cellar
-  steps.
+  steps. I know in case I let freeze completely take control rather than acting
+  sensibly, it might taken a toll my life. Back when we were youthful, my father
+  and my uncle arranged my cousins and me for what we are to do in a
+  circumstance like this in the event that we need to live. Keep to the floor,
+  get out of the line of fire, explore for shelter, hold up for fortification.
+  How I trusted I would never need to review these enlightening, but the gunfire
+  hitting against the divider of my party benefit shop brutally yanks me back
+  onto the ground of reality.
 author: Rokinos
 date: 2021-07-03T17:45:46.006Z
 tags:
