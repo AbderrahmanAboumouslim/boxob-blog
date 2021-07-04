@@ -20,7 +20,7 @@
 
 body {
   font-family: monospace;
-  background-color: var(--colorThree);
+  background-color: var(--colorOne);
 }
 
 ul {
@@ -178,6 +178,7 @@ nav.btn-btn {
 
 .section-a {
   grid-template-columns: 1fr 0.5fr;
+  margin-bottom: 3rem;
 }
 
 .left-col {
@@ -259,6 +260,14 @@ nav.btn-btn {
 .boxes {
   margin-bottom: 1rem;
   flex-direction: column;
+}
+
+.customize-right {
+  border-radius: 0;
+  background-color: var(--colorThree);
+  box-shadow: 0.6rem 0.6rem 0 var(--logoColor);
+  margin-bottom: 2rem;
+  color: white;
 }
 
 .boxes p {
@@ -561,14 +570,8 @@ label,
   margin: auto;
 }
 
-.about-img {
-  width: 100%;
-  height: 100%;
-}
-
 .person {
-  border-radius: 50%;
-  box-shadow: 0 0 20px black;
+  display: block;
 }
 
 .about-container {
