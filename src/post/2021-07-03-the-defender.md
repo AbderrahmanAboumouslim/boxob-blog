@@ -1,5 +1,5 @@
 ---
-title: "The Defender / CHAPTER 1:"
+title: "The Defender /CHAPTER 1:"
 description: I’m lying down on my front, my brow is stuck to the cold surface of
   the floor, and I press my shaking hands to my head. The crackle of the
   programmed weapon hits horrendously against my eardrum, and the sharp pieces
