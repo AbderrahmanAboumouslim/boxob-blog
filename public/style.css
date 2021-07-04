@@ -20,7 +20,7 @@
 
 body {
   font-family: monospace;
-  background-color: var(--colorFive);
+  background-color: var(--colorThree);
 }
 
 ul {
@@ -204,8 +204,10 @@ nav.btn-btn {
 
 .section-b {
   grid-template-columns: 1fr 0.4fr;
-  background-color: var(--colorFive);
+  background-color: var(--colorOne);
   border-radius: 1rem;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
 }
 
 .featured-banner {
@@ -225,8 +227,13 @@ nav.btn-btn {
   margin-top: 1rem;
 }
 
-.left-content {
-  grid-template-columns: 1fr 0.7fr;
+.about-brief {
+  border-radius: 50%;
+  transform: scale(0.9);
+}
+
+article .left-content {
+  grid-template-columns: 1fr 0.6fr;
 }
 
 .left-content h1 {
@@ -370,8 +377,8 @@ nav.btn-btn {
   gap: 1rem;
 }
 .box {
-  background-color: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.611);
+  background-color: var(--colorFive);
+  box-shadow: 0 0 3px black;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -387,7 +394,7 @@ nav.btn-btn {
   margin-top: 1rem;
   padding: clamp(0.4rem, 5vw, 1rem);
   border-radius: 1rem;
-  background-color: var(--colorThree);
+  background-color: var(--colorTwo);
   color: white;
   font-size: 1.4rem;
 }
