@@ -40,7 +40,7 @@
             <h1 class="contact-title">Contact us</h1>
         </div>
     </div>
-    <form name="contact" data-netlify="true" method="POST">
+    <form name="contact" data-netlify="true" method="POST" data-netlify-recaptcha="true">
         <div class="user-info">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -53,6 +53,7 @@
             <p class="com-p">How can we serve you?</p>
             <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button class="from-btn" type="submit">Submit</button>
     </form>
 </div>
