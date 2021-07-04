@@ -262,7 +262,7 @@ nav.btn-btn {
   flex-direction: column;
 }
 
-.customize-right {
+.right-content .customize-right {
   border-radius: 0;
   background-color: var(--colorThree);
   box-shadow: 0.6rem 0.6rem 0 var(--logoColor);
@@ -417,6 +417,7 @@ nav.btn-btn {
   background-color: var(--colorTwo);
   color: white;
   font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
 }
 
 .btn:hover {
@@ -536,17 +537,17 @@ textarea {
 .from-btn {
   font-size: 2rem;
   padding: 0.4rem 1rem;
-  background-color: var(--fourthColor);
-  color: white;
+  background-color: var(--colorFour);
+  color: black;
   border: none;
   cursor: pointer;
   border-radius: 4rem;
   width: 100%;
   transition: all 0.35s ease-in-out;
 }
-.form-btn:hover {
-  background-color: rgb(190, 188, 155);
-  color: #0f0c29;
+.from-btn:hover {
+  background-color: var(--colorThree);
+  color: white;
 }
 
 .contact-title,
@@ -570,6 +571,10 @@ label,
   margin: auto;
 }
 
+.about-img {
+  box-shadow: 0.5rem 0.5rem 0 var(--colorTwo), 1rem 1rem 0 var(--colorFive);
+}
+
 .person {
   display: block;
 }
@@ -577,7 +582,7 @@ label,
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
   height: auto;
